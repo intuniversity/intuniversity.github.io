@@ -43,11 +43,14 @@
         </article>
     </section>
 
-    function handleResponse(response) {
-   console.log(response);
-    }
-    var script = document.createElement('script');
-    script.src = 'https://javascriptlab.000webhostapp.com/collect.php?callback=handleResponse';
-    document.body.appendChild(script);
+    <script>
+            function handleResponse(response) {
+               console.log(response);
+            }
+                var script = document.createElement('script');
+                script.src = 'https://javascriptlab.000webhostapp.com/collect.php?callback=handleResponse';
+                document.body.appendChild(script);
+    </script>
+
 </body>
 </html>
