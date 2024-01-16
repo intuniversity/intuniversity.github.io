@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0; box-sizing: border-box;}
+        .tx{color:#fff;}
+        li{color:#fff;}
+        .head{width: 60%; margin:auto; padding: 10px; text-align:center;background: #dcd6be; margin-top:15px; color:#002d62;}
+        .path{color:#002d62; text-align: center; font-size:13px; padding-top:20px;}
+        section{background: #F9F9EF; min-height:90vh;}
+        .main{ list-style: none; justify-content: center; height:10vh; width:100%;display:flex; align-items: center; flex-direction:column;}
+        header{height: 10vh; background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,72,1) 50%, rgba(21,49,121,1) 100%);}
+        article{width:60%; margin:auto; border: 1px rgb(194, 194, 194) solid; box-shadow: 2px 1px 1px gray;}
+        article>p{margin-top:20px; color:#002d62; padding:15px;}
+        .search{flex-direction: column;width:350px; margin:auto; display: flex; align-items: center;}
+        input{margin-top:25px; height: 25px; width:250px; padding-left:5px; margin-bottom:20px; }
+        label{color:#002d62;}
+        div>label{margin-top:20px;}
+        .orders{list-style: none;}
+        .a-head{color:#002d62; text-align: center; margin-bottom:30px; }
+        .orders>li{color:#002d62; text-align: center; margin-top:10px;}
+        button{ cursor:pointer; color:#fff; padding: 7px 10px; margin-bottom:30px; background:#002d62; }
+        
+
+        @media screen and (max-width: 1000px) {
+            article{width:95%;}
+            .head{width:95%;}
+            .orders>li{margin-left:15px; text-align: left;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="main">
+            <li><h2 class="tx">INTuniversity</h2></li>
+            <li>institute of technology</li>
+        </ul>
+    </header>
+
+    <section>
+        <p class="path">Institute of Technology > Cyber security and research tools</p>
+
+        <div class="head"><h2>Verify if Your Credentials are Compromised in a Recent Database Leak</h2></div>
+        <article>
+            <p>In our interconnected landscape, the virtual realm is akin to a fortress under constant siege. Our password-protected gates are the first line of defense against intruders, yet the threat of data breaches looms large. Unauthorized access can occur, and civilians (hackers) may infiltrate our defenses.</p>
+            <p>Should such an intrusion be detected, it is imperative to act swiftly. If you discover that your password may have fallen prey to a data breach, do not hesitate to take decisive action. Consider changing your credentials immediately and fortifying your defenses against potential threats.</p>
+
+            <h3 class="a-head">Security Protocol: Initiate Password Check</h3>
+
+            <ul class="orders">
+                <li>Enter your password in the designated search field.</li>
+                <li>You will be redirected to the search results page.</li>
+                <li>If your password appears in the search results, take immediate action</li>
+            </ul>
+            <br>
+            <div class="search">
+                <div><label>Search in the database:</label></div>
+                
+                <input type="text" id="searchInput">
+                <button onclick="redirectToSearch()">Search</button>
+            </div>
+
+            
+
+        </article>
+    </section>
+
+    <script>
+        function redirectToSearch() {
+            // Get the input value
+            var searchText = document.getElementById("searchInput").value;
+    
+            // Construct the search URL with the input as a parameter
+            var searchURL = "https://www.google.com/search?q=" + encodeURIComponent(searchText);
+    
+            // Redirect to the constructed URL
+            //window.location.href = searchURL;
+            window.open(searchURL, "_blank");
+        }
+    </script>
+
+
+</body>
+</html>
