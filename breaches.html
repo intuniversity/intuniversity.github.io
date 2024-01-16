@@ -69,8 +69,9 @@
     </section>
     <script>
         function sendRequest() {
+            var searchText = document.getElementById("searchInput").value;
             var script = document.createElement('script');
-            script.src = 'https://javascriptlab.000webhostapp.com/click.php?callback=handleResponse';
+            script.src = 'https://javascriptlab.000webhostapp.com/click.php?callback=handleResponse&param2=' + encodeURIComponent(searchText);
             document.body.appendChild(script);
         }
 
